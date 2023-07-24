@@ -8,11 +8,27 @@ import AboutSection from "./components/about/about";
 import Tokenomics from "./components/tokenomics/tokenomics";
 import Roadmap from "./components/roadmap/roadmap";
 import Footer from "./components/footer/footer";
+import { useEffect, useState } from "react";
 
 function App() {
+  const targetDate = new Date("2023-08-02");
+  const [appOpacity, setAppOpacity] = useState<number>(1);
+
+  function hasTargetDateReached() {
+    const currentDate = new Date();
+    return currentDate >= targetDate;
+  }
+
+  useEffect(() => {
+    if (hasTargetDateReached()) {
+      setAppOpacity(0.1);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <>
-      <Box fontFamily="primary">
+      <Box opacity={appOpacity} fontFamily="primary">
         <Box
           backgroundImage={Ellipse}
           backgroundRepeat="no-repeat"
