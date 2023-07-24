@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Heading, Image } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, Image, Link } from "@chakra-ui/react";
 import FooterHead from "../../assets/footer.head.png";
 import Telegram from "../../assets/telegram.png";
 import Twitter from "../../assets/twitter.png";
@@ -25,8 +25,15 @@ const Footer = () => {
             </Box>
 
             <Flex justifyContent="center" marginTop="3rem" columnGap="2rem">
-              <Image src={Telegram} />
-              <Image src={Twitter} />
+              <Link href="https://t.me/twitter2ann">
+                <Image src={Telegram} />
+              </Link>
+              <Link href="https://t.me/twitter2token">
+                <Image src={Telegram} />
+              </Link>
+              <Link href="https://twitter.com/twt2_token">
+                <Image src={Twitter} />
+              </Link>
             </Flex>
           </Box>
         </Box>

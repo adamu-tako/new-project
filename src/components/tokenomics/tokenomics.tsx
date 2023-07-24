@@ -29,7 +29,7 @@ const Tokenomics = () => {
           marginBlock="3rem"
           textAlign="center"
           border="4px solid #000">
-          <Text>6478299284848w9928284</Text>
+          <Text></Text>
           <Text>Contract Address</Text>
         </Flex>
 
@@ -54,7 +54,7 @@ const Tokenomics = () => {
             width="90%"
             borderRadius="12px"
             bgColor="#000">
-            <Heading fontSize="15px">% 0</Heading>
+            <Heading fontSize="15px"></Heading>
             <Heading fontSize="12px">Buy? Sell Tax</Heading>
           </Box>
 
@@ -63,17 +63,12 @@ const Tokenomics = () => {
             marginInline="auto"
             textAlign="center"
             width="90%"
+            minH="150px"
             padding="10px"
             borderRadius="12px"
             bgColor="#000">
-            <Text fontSize="8px">No Taxes, No Hassles. Feels Good Right?</Text>
-            <Text fontSize="7px" marginTop=".5rem">
-              Audit on contract, passed. No unlocked tokens, no dev or team
-              token, contract is renounced and 100% transparency with the
-              community. 20% is locked and reserved for CEX listing, big
-              partnership, burning events, and development of the shiba meme
-              community ecosystem.
-            </Text>
+            <Text fontSize="8px"></Text>
+            <Text fontSize="7px" marginTop=".5rem"></Text>
           </Box>
         </Flex>
 
@@ -103,7 +98,7 @@ const Tokenomics = () => {
             border="2px solid black"
             borderRadius="12px"
             bgColor="#fff">
-            <Heading fontSize="15px">1,000,000,000,000,000</Heading>
+            <Heading fontSize="15px"></Heading>
             <Heading fontSize="12px">Total Supply</Heading>
           </Flex>
 

@@ -21,7 +21,7 @@ const AboutSection = () => {
           <Heading>About</Heading>
         </Box>
 
-        <Box marginTop="1.5rem" textAlign="justify" fontSize="10px">
+        <Box marginTop="1.5rem" textAlign="justify" fontSize="12px">
           <Text marginBlock=".5rem">
             Twitter has always held it’s own against a sea of ordinary apps that
             compare poorly. There have always been attempts to oust the
@@ -71,8 +71,8 @@ const AboutSection = () => {
           </Box>
 
           <Box marginBlock=".5rem">
-            <Heading fontSize="1rem">SMART SEARCH:</Heading>
-            <Text>
+            <Heading fontSize="1.2rem">SMART SEARCH:</Heading>
+            <Text fontSize=".9rem">
               Twitter 2.0 possesses a smart search feature that ensures you
               quickly find what you are searching for when you tap the search
               icon.
@@ -80,8 +80,8 @@ const AboutSection = () => {
           </Box>
 
           <Box marginBlock=".5rem">
-            <Heading fontSize="1rem">PERSONIFIED TRENDING:</Heading>
-            <Text>
+            <Heading fontSize="1.2rem">PERSONIFIED TRENDING:</Heading>
+            <Text fontSize=".9rem">
               Our smart system understands what each user is most interested in,
               and offers that information among trending topics while also
               providing access to all relevant trends.
@@ -89,8 +89,8 @@ const AboutSection = () => {
           </Box>
 
           <Box marginBlock=".5rem">
-            <Heading fontSize="1rem">QUALITY AND CLARITY:</Heading>
-            <Text>
+            <Heading fontSize="1.2rem">QUALITY AND CLARITY:</Heading>
+            <Text fontSize=".9rem">
               Crisp, high definition image quality means that it is not just the
               general information on Twitter 2.0 that maintains quality and
               clarity. The resolution of uploaded multimedia is perfectly

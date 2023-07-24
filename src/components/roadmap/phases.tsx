@@ -9,7 +9,7 @@ const Phases = () => {
         rowGap="1rem"
         alignItems="flex-start"
         bgColor="#1FBCDF"
-        fontSize="9px"
+        fontSize="12px"
         w="85%"
         marginInline="auto"
         paddingBlock="1.2rem"
@@ -19,7 +19,7 @@ const Phases = () => {
         marginBlock="3rem"
         textAlign="center"
         border="4px solid #000">
-        <Text fontSize="15px">Phase 1</Text>
+        <Text fontSize="18px">Phase 1</Text>
         <Text lineHeight={0}>Contract deployment</Text>
         <Text lineHeight={0}>Website deployment</Text>
         <Text lineHeight={0}>Social media creation</Text>
@@ -45,7 +45,7 @@ const Phases = () => {
         rowGap="1rem"
         alignItems="flex-start"
         bgColor="#1FBCDF"
-        fontSize="9px"
+        fontSize="12px"
         w="85%"
         marginInline="auto"
         paddingBlock="1.2rem"
@@ -55,7 +55,7 @@ const Phases = () => {
         marginBlock="3rem"
         textAlign="center"
         border="4px solid #000">
-        <Text fontSize="15px">Phase 2</Text>
+        <Text fontSize="18px">Phase 2</Text>
         <Text lineHeight={0}>Press release</Text>
         <Text lineHeight={0}>More partnerships (CEX Listings)</Text>
         <Text lineHeight={0}>Post launch Marketing</Text>
@@ -80,7 +80,7 @@ const Phases = () => {
         rowGap="1rem"
         alignItems="flex-start"
         bgColor="#1FBCDF"
-        fontSize="9px"
+        fontSize="12px"
         w="85%"
         marginInline="auto"
         paddingBlock="1.2rem"
@@ -90,7 +90,7 @@ const Phases = () => {
         marginBlock="3rem"
         textAlign="center"
         border="4px solid #000">
-        <Text fontSize="15px">Phase 3</Text>
+        <Text fontSize="18px">Phase 3</Text>
         <Text lineHeight={0}>Media Partnership</Text>
         <Text lineHeight={0}>Mega worldwide campaign</Text>
         <Text lineHeight={0}>NFT integration</Text>
@@ -112,7 +112,7 @@ const Phases = () => {
         rowGap="1rem"
         alignItems="flex-start"
         bgColor="#1FBCDF"
-        fontSize="9px"
+        fontSize="12px"
         w="85%"
         marginInline="auto"
         paddingBlock="1.2rem"
@@ -122,7 +122,7 @@ const Phases = () => {
         marginBlock="3rem"
         textAlign="center"
         border="4px solid #000">
-        <Text fontSize="15px">Phase 4</Text>
+        <Text fontSize="18px">Phase 4</Text>
         <Text lineHeight={0}>Celebrity and influencer</Text>
         <Text lineHeight={0}>Community videos and marketing</Text>
         <Text lineHeight={0}>

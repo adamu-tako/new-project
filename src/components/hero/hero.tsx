@@ -6,7 +6,7 @@ const HeroSection = () => {
     <Center flexDir="column">
       <Box
         bgColor="#000"
-        fontSize="10px"
+        fontSize="12px"
         w="70%"
         minHeight="250px"
         paddingBlock="1.5rem"
@@ -14,8 +14,8 @@ const HeroSection = () => {
         color="white"
         borderRadius="12px"
         border="4px solid #1FBCDF">
-        <Heading fontSize="30px">Twitter 2.0</Heading>
-        <Heading fontSize="15px">IS BIGGER AND BETTER</Heading>
+        <Heading fontSize="34px">Twitter 2.0</Heading>
+        <Heading fontSize="18px">IS BIGGER AND BETTER</Heading>
         <Text marginBlock=".5rem">
           With the creation of the Thr**ds app, many have speculated about it
           being a threat to Twitter. This is laughable. They say imitation is

@@ -22,7 +22,7 @@ const Roadmap = () => {
           width="90%"
           borderRadius="12px"
           height="45px"
-          fontSize="10px"
+          fontSize="12px"
           marginBlock="1rem"
           bgColor="transparent">
           <Text>
@@ -33,7 +33,9 @@ const Roadmap = () => {
           </Text>
         </Box>
 
-        <Phases />
+        <Box paddingTop="2rem">
+          <Phases />
+        </Box>
       </Box>
     </Center>
   );
