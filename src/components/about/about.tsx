@@ -22,6 +22,7 @@ const AboutSection = () => {
         </Box>
 
         <Box
+          color="#fff"
           width="90%"
           marginInline="auto"
           marginTop="1.5rem"
