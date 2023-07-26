@@ -20,7 +20,7 @@ const Tokenomics = () => {
           flexDir="column"
           justifyContent="space-around"
           rowGap="1rem"
-          bgColor="#1FBCDF"
+          bgColor="#fff"
           fontSize="12px"
           w={{ base: "90%", md: "40%" }}
           minH="100px"
@@ -32,7 +32,7 @@ const Tokenomics = () => {
           marginBlock="3rem"
           textAlign="center"
           border="4px solid #000">
-          <Heading fontSize="1rem">23y23y49r8939843439439rufj989099-</Heading>
+          <Heading fontSize="1rem"></Heading>
           <Text>Contract Address</Text>
         </Flex>
 

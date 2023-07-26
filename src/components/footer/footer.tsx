@@ -1,7 +1,7 @@
 import { Box, Center, Flex, Heading, Image, Link } from "@chakra-ui/react";
 import Logo from "../../assets/logo2.svg";
-import Telegram from "../../assets/telegram.png";
-import Twitter from "../../assets/twitter.png";
+import Telegram from "../../assets/Telegram.svg";
+import Twitter from "../../assets/twitter.svg";
 
 const Footer = () => {
   return (
@@ -28,15 +28,19 @@ const Footer = () => {
               <Heading>Contact Us</Heading>
             </Box>
 
-            <Flex justifyContent="center" marginTop="3rem" columnGap="2rem">
+            <Flex
+              justifyContent="center"
+              minH="2rem"
+              marginTop="3rem"
+              columnGap="2rem">
               <Link href="https://t.me/twitter2ann">
-                <Image src={Telegram} />
+                <Image height="2rem" width="2rem" src={Telegram} />
               </Link>
               <Link href="https://t.me/twitter2token">
-                <Image src={Telegram} />
+                <Image height="2rem" width="2rem" src={Telegram} />
               </Link>
               <Link href="https://twitter.com/twt2_token">
-                <Image src={Twitter} />
+                <Image height="2rem" width="2rem" src={Twitter} />
               </Link>
             </Flex>
           </Box>

@@ -1,6 +1,5 @@
 import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 import Logo from "../../assets/logo2.svg";
-import Triangle from "../../assets/triangle.svg";
 
 const HeroSection = () => {
   return (
@@ -43,7 +42,6 @@ const HeroSection = () => {
       </Box>
       <Box
         w="100%"
-        bgImage={{ base: "", md: Triangle }}
         bgPosition="bottom right"
         bgRepeat="no-repeat"
         marginTop="4rem">
