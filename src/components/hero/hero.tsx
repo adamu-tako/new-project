@@ -1,10 +1,15 @@
 import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 import Logo from "../../assets/logo2.svg";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
     <Center flexDir="column">
       <Box
+        as={motion.div}
+        initial={{ opacity: 0, y: "20px" }}
+        animate={{ opacity: 1, y: "0" }}
+        transition=".5s linear"
         bgColor="transparent"
         fontSize="12px"
         w={{ base: "90%", md: "70%" }}
@@ -41,6 +46,10 @@ const HeroSection = () => {
         </Text>
       </Box>
       <Box
+        as={motion.div}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition=".5s linear"
         w="100%"
         bgPosition="bottom right"
         bgRepeat="no-repeat"

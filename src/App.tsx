@@ -7,7 +7,6 @@ import Tokenomics from "./components/tokenomics/tokenomics";
 import Roadmap from "./components/roadmap/roadmap";
 import Footer from "./components/footer/footer";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 // import Star from "./assets/star.svg";
 
 function App() {
@@ -33,10 +32,6 @@ function App() {
           <Header />
         </Box>
         <Box
-          as={motion.div}
-          initial={{ opacity: 0, x: "-50px" }}
-          animate={{ opacity: 1, x: "0" }}
-          transition=".5s linear"
           transform={{ base: "translateY(-100px)", md: "unset" }}
           bgRepeat="no-repeat">
           <HeroSection />
