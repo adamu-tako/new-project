@@ -27,15 +27,16 @@ const Partners = () => {
   ];
   return (
     <Center flexDir="column">
-      <Box w="70%">
+      <Box w={{ base: "70%", md: "100%" }}>
         <Box
           marginInline="auto"
           textAlign="center"
-          width="90%"
+          width="200px"
           borderRadius="12px"
-          height="45px"
-          bgColor="#1FBCDF">
-          <Heading>PARTNERS</Heading>
+          border="2px solid white"
+          height="50px"
+          bgColor="transparent">
+          <Heading>Partners</Heading>
         </Box>
 
         <Wrap marginInline="auto" marginTop="2rem" width="90%" flexWrap="wrap">

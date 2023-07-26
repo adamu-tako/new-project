@@ -4,16 +4,12 @@ import {
   Flex,
   Button,
   useColorModeValue,
-  Stack,
   Image,
   Icon,
+  Heading,
 } from "@chakra-ui/react";
-import {
-  ArrowBackIcon,
-  ArrowForwardIcon,
-  HamburgerIcon,
-} from "@chakra-ui/icons";
-import Logo from "../../assets/logo.png";
+import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
+import Logo from "../../assets/logo.svg";
 
 export default function Header() {
   return (
@@ -22,26 +18,27 @@ export default function Header() {
         <Flex
           h={"fit-content"}
           alignItems={"center"}
+          padding={{ base: "10px 20px", md: "20px 30px" }}
           justifyContent={"space-between"}>
-          <Box w="5rem">
+          <Box w={{ base: "5rem", md: "10rem" }}>
             <Image src={Logo} alt="Logo" />
           </Box>
 
+          <Heading fontSize={{ base: "xs", md: "4xl" }}>Twitter 2.0</Heading>
           <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={7}>
-              <HamburgerIcon w={8} h={8} color="white" />
-              <Button
-                as={Flex}
-                columnGap=".5rem"
-                colorScheme="whiteAlpha"
-                variant="outline">
-                <Flex flexDir="column">
-                  <Icon as={ArrowForwardIcon} />
-                  <Icon as={ArrowBackIcon} />
-                </Flex>
-                Buy Now
-              </Button>
-            </Stack>
+            <Button
+              as={Flex}
+              cursor="pointer"
+              columnGap=".5rem"
+              fontSize={{ base: ".8rem", md: "1rem" }}
+              border="1px solid white"
+              variant="outline">
+              <Flex flexDir="column">
+                <Icon as={ArrowForwardIcon} />
+                <Icon as={ArrowBackIcon} />
+              </Flex>
+              Buy Now
+            </Button>
           </Flex>
         </Flex>
       </Box>

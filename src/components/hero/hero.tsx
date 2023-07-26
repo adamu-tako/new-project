@@ -1,19 +1,21 @@
 import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
-import Twitter from "../../assets/twitter2.png";
+import Logo from "../../assets/logo2.svg";
+import Triangle from "../../assets/triangle.svg";
 
 const HeroSection = () => {
   return (
     <Center flexDir="column">
       <Box
-        bgColor="#000"
+        bgColor="transparent"
         fontSize="12px"
-        w="70%"
+        w={{ base: "90%", md: "70%" }}
         minHeight="250px"
         paddingBlock="1.5rem"
-        paddingInline=".5rem"
+        paddingInline={{ base: ".5rem", md: "1rem" }}
         color="white"
+        textAlign="justify"
         borderRadius="12px"
-        border="4px solid #1FBCDF">
+        border="4px solid #fff">
         <Heading fontSize="34px">Twitter 2.0</Heading>
         <Heading fontSize="18px">IS BIGGER AND BETTER</Heading>
         <Text marginBlock=".5rem">
@@ -39,8 +41,15 @@ const HeroSection = () => {
           competition and making twitter better than ever.
         </Text>
       </Box>
-      <Box w="70%" marginTop="4rem">
-        <Image src={Twitter} alt="Hero Image" />
+      <Box
+        w="100%"
+        bgImage={{ base: "", md: Triangle }}
+        bgPosition="bottom right"
+        bgRepeat="no-repeat"
+        marginTop="4rem">
+        <Box width={{ base: "90%", md: "fit-content" }} marginInline="auto">
+          <Image src={Logo} alt="Hero Image" />
+        </Box>
       </Box>
     </Center>
   );

@@ -11,17 +11,22 @@ const AboutSection = () => {
         <Box
           marginInline="auto"
           textAlign="center"
-          width="50%"
+          width="200px"
           borderRadius="12px"
-          height="45px"
-          outline="1px solid #1FBCDF"
+          height="50px"
+          outline="2px solid white"
           color="#fff"
           boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
-          bgColor="#000">
+          bgColor="transparent">
           <Heading>About</Heading>
         </Box>
 
-        <Box marginTop="1.5rem" textAlign="justify" fontSize="12px">
+        <Box
+          width="90%"
+          marginInline="auto"
+          marginTop="1.5rem"
+          textAlign="justify"
+          fontSize="12px">
           <Text marginBlock=".5rem">
             Twitter has always held it’s own against a sea of ordinary apps that
             compare poorly. There have always been attempts to oust the
@@ -44,29 +49,40 @@ const AboutSection = () => {
             around you much faster and with precise accuracy. You can say
             goodbye to false threads that contain no real information.
           </Text>
+          <Text marginBlock=".5rem">
+            <b style={{ display: "block", marginBlock: "5px" }}>
+              ACURATE INFORMATION, AND FAST
+            </b>
+            Twitter is known to be the place to get news and updates earliest,
+            even sooner than the biggest news channels. Twitter 2.0 informs you
+            about happenings in the world and around you much faster and with
+            precise accuracy. You can say goodbye to false threads that contain
+            no real information.
+          </Text>
         </Box>
 
         <Box
-          bgColor="#1FBCDF"
           fontSize="10px"
           w="85%"
           marginInline="auto"
           minHeight="250px"
           paddingBlock=".5rem"
           paddingInline=".5rem"
-          color="white"
+          color={{ base: "black", md: "#fff" }}
+          bgColor={{ base: "white", md: "transparent" }}
           borderRadius="12px"
           marginBlock="3rem"
           border="4px solid #000">
           <Box
             marginInline="auto"
             textAlign="center"
-            width="90%"
+            width="200px"
             marginBlock=".5rem"
             borderRadius="12px"
             height="35px"
-            color="#fff"
-            bgColor="#000">
+            border="2px solid white"
+            color={{ base: "white", md: "black" }}
+            bgColor={{ base: "black", md: "white" }}>
             <Heading fontSize="xl">Special Features</Heading>
           </Box>
 

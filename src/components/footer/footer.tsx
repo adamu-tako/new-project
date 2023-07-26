@@ -1,5 +1,5 @@
 import { Box, Center, Flex, Heading, Image, Link } from "@chakra-ui/react";
-import FooterHead from "../../assets/footer.head.png";
+import Logo from "../../assets/logo2.svg";
 import Telegram from "../../assets/telegram.png";
 import Twitter from "../../assets/twitter.png";
 
@@ -8,19 +8,23 @@ const Footer = () => {
     <>
       <Center>
         <Box w="70%">
-          <Box margin=".5rem 0 3.5rem 0">
-            <Image src={FooterHead} alt="Footer image" />
-          </Box>
+          <Flex
+            justifyContent="center"
+            width={{ base: "90%", md: "100%" }}
+            marginInline="auto">
+            <Image src={Logo} alt="Hero Image" />
+          </Flex>
 
           <Box>
             <Box
-              color="#000"
-              marginInline="auto"
               textAlign="center"
-              width="90%"
+              width="200px"
               borderRadius="12px"
-              height="45px"
-              bgColor="#fff">
+              height="50px"
+              margin="30px auto"
+              outline="2px solid white"
+              color="#fff"
+              bgColor="transparent">
               <Heading>Contact Us</Heading>
             </Box>
 

@@ -3,24 +3,27 @@ import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
 const Tokenomics = () => {
   return (
     <Center>
-      <Box w="70%">
+      <Box w="100%">
         <Box
           color="white"
           marginInline="auto"
           textAlign="center"
-          width="90%"
+          width="250px"
           borderRadius="12px"
           height="45px"
-          bgColor="#1FBCDF">
+          border="2px solid white"
+          bgColor="transparent">
           <Heading>Tokenomics</Heading>
         </Box>
 
         <Flex
           flexDir="column"
+          justifyContent="space-around"
           rowGap="1rem"
           bgColor="#1FBCDF"
           fontSize="12px"
-          w="85%"
+          w={{ base: "90%", md: "40%" }}
+          minH="100px"
           marginInline="auto"
           paddingBlock=".5rem"
           paddingInline=".5rem"
@@ -29,16 +32,16 @@ const Tokenomics = () => {
           marginBlock="3rem"
           textAlign="center"
           border="4px solid #000">
-          <Text></Text>
+          <Heading fontSize="1rem">23y23y49r8939843439439rufj989099-</Heading>
           <Text>Contract Address</Text>
         </Flex>
 
         <Flex
           flexDir="column"
           rowGap="1rem"
-          bgColor="transparent"
+          bgColor="white"
           fontSize="12px"
-          w="85%"
+          w={{ base: "90%", md: "40%" }}
           marginInline="auto"
           paddingBlock=".5rem"
           paddingInline=".5rem"
@@ -47,37 +50,50 @@ const Tokenomics = () => {
           marginBlock="3rem"
           textAlign="center"
           border="4px solid #000">
-          <Box
+          <Flex
+            flexDir="column"
+            justifyContent="space-around"
             color="white"
             marginInline="auto"
             textAlign="center"
             width="90%"
+            minH="60px"
             borderRadius="12px"
             bgColor="#000">
-            <Heading fontSize="15px"></Heading>
-            <Heading fontSize="12px">Buy? Sell Tax</Heading>
-          </Box>
+            <Heading fontSize="15px">0%</Heading>
+            <Heading fontSize="12px">Buy/ Sell Tax</Heading>
+          </Flex>
 
-          <Box
+          <Flex
+            flexDir="column"
+            justifyContent="space-around"
             color="white"
             marginInline="auto"
             textAlign="center"
-            width="90%"
-            minH="150px"
+            w={{ base: "90%", md: "70%" }}
+            minH="250px"
             padding="10px"
             borderRadius="12px"
             bgColor="#000">
-            <Text fontSize="8px"></Text>
-            <Text fontSize="7px" marginTop=".5rem"></Text>
-          </Box>
+            <Text fontSize="1.2rem">
+              No Taxes, No Hassles. Feels Good Right?
+            </Text>
+            <Text fontSize=".8rem" marginTop=".5rem">
+              Audit on contract, passed. No unlocked tokens, no dev or team
+              token, contract is renounced and 100% transparency with the
+              community. 20% is locked and reserved for CEX listing, big
+              partnership, burning events, and development of the shiba meme
+              community ecosystem.
+            </Text>
+          </Flex>
         </Flex>
 
         <Flex
           flexDir="column"
           rowGap="1rem"
-          bgColor="#1FBCDF"
+          bgColor={{ base: "#fff", md: "transparent" }}
           fontSize="12px"
-          w="85%"
+          w={{ base: "90%", md: "50%" }}
           marginInline="auto"
           paddingBlock=".5rem"
           paddingInline=".5rem"
