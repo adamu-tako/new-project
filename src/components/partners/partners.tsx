@@ -7,9 +7,9 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import Partner1 from "../../assets/partner1.png";
-import Partner2 from "../../assets/partner-bsc.png";
-import Partner3 from "../../assets/partner-audit.png";
+// import Partner1 from "../../assets/partner1.png";
+import Partner2 from "../../assets/certik-logo.png";
+import Partner3 from "../../assets/dex-view-logo.png";
 import Partner4 from "../../assets/partner-cmc.png";
 import Partner5 from "../../assets/partner-coinGecko.png";
 import Partner6 from "../../assets/partner-dextools.png";
@@ -20,11 +20,12 @@ const Partners = () => {
     { name: "", image: Partner6, link: "https://dextools.io/" },
     { name: "", image: Partner7, link: "https://www.pinksale.finance/" },
     { name: "", image: Partner4, link: "https://coinmarketcap.com/" },
-    { name: "", image: Partner2, link: "https://bscscan.com/" },
-    { name: "", image: Partner1, link: "https://pancakeswap.finance/" },
+    { name: "", image: Partner2, link: "https://www.certik.com/" },
+    // { name: "", image: Partner1, link: "https://pancakeswap.finance/" },
     { name: "", image: Partner3, link: "https://www.dexview.com/" },
     { name: "", image: Partner5, link: "https://www.coingecko.com/" },
   ];
+
   return (
     <Center flexDir="column">
       <Box w={{ base: "70%", md: "100%" }}>
@@ -40,8 +41,8 @@ const Partners = () => {
         </Box>
 
         <Wrap marginInline="auto" marginTop="2rem" width="90%" flexWrap="wrap">
-          {partners.map((partner) => (
-            <Link marginInline="auto" href={partner.link}>
+          {partners.map((partner, i) => (
+            <Link key={i} marginInline="auto" target="_blank" href={partner.link}>
               <WrapItem
                 margin="1rem"
                 bgColor="#ECECEC"

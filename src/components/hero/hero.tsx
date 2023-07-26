@@ -15,7 +15,7 @@ const HeroSection = () => {
         color="white"
         textAlign="justify"
         borderRadius="12px"
-        border="4px solid #fff">
+        border="2px solid #fff">
         <Heading fontSize="34px">Twitter 2.0</Heading>
         <Heading fontSize="18px">IS BIGGER AND BETTER</Heading>
         <Text marginBlock=".5rem">

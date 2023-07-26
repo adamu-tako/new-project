@@ -7,7 +7,7 @@ import Tokenomics from "./components/tokenomics/tokenomics";
 import Roadmap from "./components/roadmap/roadmap";
 import Footer from "./components/footer/footer";
 import { useEffect, useState } from "react";
-import Star from "./assets/star.svg";
+// import Star from "./assets/star.svg";
 
 function App() {
   const targetDate = new Date("2023-08-05");
@@ -32,12 +32,11 @@ function App() {
           <Header />
         </Box>
         <Box
-          transform={{ base: "translateY(-150px)", md: "unset" }}
-          bgImage={Star}
+          transform={{ base: "translateY(-100px)", md: "unset" }}
           bgRepeat="no-repeat">
           <HeroSection />
         </Box>
-        <Box>
+        <Box marginBlock={{ base: "3rem", md: "6rem" }}>
           <Partners />
         </Box>
         <Box>
