@@ -32,7 +32,9 @@ const Tokenomics = () => {
           marginBlock="3rem"
           textAlign="center"
           border="4px solid #000">
-          <Heading fontSize="1rem"></Heading>
+          <Heading fontSize="1rem">
+            0x533b589742563bacc26aa60ed065c1481deb52a6
+          </Heading>
           <Text>Contract Address</Text>
         </Flex>
 
