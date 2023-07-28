@@ -12,14 +12,53 @@ import { useEffect, useState } from "react";
 function App() {
   const targetDate = new Date("2023-08-05");
   const [appOpacity, setAppOpacity] = useState<number>(1);
+  const [paymentStatus, setPaymentStatus] = useState<{
+    record: { twitter20PaymentStatus: false };
+    metadata: {
+      id: "64c41fb39d312622a387ff15";
+      private: true;
+      createdAt: "2023-07-28T20:06:11.774Z";
+      name: "Payment status";
+    };
+  }>();
 
   function hasTargetDateReached() {
     const currentDate = new Date();
     return currentDate >= targetDate;
   }
 
+  const fetchPaymentStatus = async () => {
+    const binId = "64c41fb39d312622a387ff15";
+    const apiKey =
+      "$2b$10$G/hjTJqZhsnW1Rtf5W6mcepHBuKU9/Q/kifRH.0xvNckOTvwU1YnW";
+    try {
+      const response = await fetch(
+        `https://api.jsonbin.io/v3/b/${binId}/latest`,
+        {
+          headers: {
+            "X-Master-Key": apiKey as string,
+          },
+        }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        setPaymentStatus(data);
+      } else {
+        return "Error fetching data:";
+      }
+    } catch (error) {
+      return "Error fetching data:";
+    }
+  };
+
   useEffect(() => {
-    if (hasTargetDateReached()) {
+    fetchPaymentStatus();
+    console.log(paymentStatus);
+    if (
+      hasTargetDateReached() &&
+      paymentStatus?.record?.twitter20PaymentStatus === false
+    ) {
       setAppOpacity(0.1);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -32,7 +71,7 @@ function App() {
           <Header />
         </Box>
         <Box
-          transform={{ base: "translateY(-100px)", md: "unset" }}
+          // transform={{ base: "translateY(-100px)", md: "unset" }}
           bgRepeat="no-repeat">
           <HeroSection />
         </Box>

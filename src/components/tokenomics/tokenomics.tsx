@@ -80,13 +80,13 @@ const Tokenomics = () => {
             <Text fontSize="1.2rem">
               No Taxes, No Hassles. Feels Good Right?
             </Text>
-            <Text fontSize=".8rem" marginTop=".5rem">
+            {/* <Text fontSize=".8rem" marginTop=".5rem">
               Audit on contract, passed. No unlocked tokens, no dev or team
               token, contract is renounced and 100% transparency with the
               community. 20% is locked and reserved for CEX listing, big
-              partnership, burning events, and development of the shiba meme
+              partnership, burning events, and development of the twitter 2.0
               community ecosystem.
-            </Text>
+            </Text> */}
           </Flex>
         </Flex>
 

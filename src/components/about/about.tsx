@@ -63,7 +63,7 @@ const AboutSection = () => {
         </Box>
 
         <Box
-          fontSize="10px"
+          // fontSize="10px"
           w="85%"
           marginInline="auto"
           minHeight="250px"
@@ -77,14 +77,14 @@ const AboutSection = () => {
           <Box
             marginInline="auto"
             textAlign="center"
-            width="200px"
-            marginBlock=".5rem"
+            width="320px"
             borderRadius="12px"
-            height="35px"
-            border="2px solid white"
-            color={{ base: "white", md: "black" }}
-            bgColor={{ base: "black", md: "white" }}>
-            <Heading fontSize="xl">Special Features</Heading>
+            height="50px"
+            outline="2px solid white"
+            color="#fff"
+            boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
+            bgColor="transparent">
+            <Heading>Special Features</Heading>
           </Box>
 
           <Box marginBlock=".5rem">

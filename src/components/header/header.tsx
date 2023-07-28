@@ -6,7 +6,6 @@ import {
   useColorModeValue,
   Image,
   Icon,
-  Heading,
   Link,
   useDisclosure,
   IconButton,
@@ -18,7 +17,7 @@ import {
   HamburgerIcon,
 } from "@chakra-ui/icons";
 import Logo from "../../assets/logo.svg";
-import WhitePaper from "../../assets/Twitter X2.0 White Paper.pdf";
+import WhitePaper from "../../assets/TWITTER2.pdf";
 
 export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,14 +34,24 @@ export default function Header() {
             <Image src={Logo} alt="Logo" />
           </Box>
 
-          <Heading fontSize={{ base: "xs", md: "4xl" }}>Twitter 2.0</Heading>
           <Flex
             display={{ base: "none", md: "flex" }}
             alignItems={"center"}
-            gap="20px 0px"
             width="30%"
+            columnGap="20px"
             justifyContent="space-around">
-            <Link href={WhitePaper}>White Paper</Link>
+            <Link
+              as={Button}
+              width={{ base: "80%", md: "10rem" }}
+              cursor="pointer"
+              color="white"
+              columnGap=".5rem"
+              fontSize={{ base: ".8rem", md: "1rem" }}
+              border="1px solid white"
+              variant="outline"
+              href={WhitePaper}>
+              White Paper
+            </Link>
             <Button
               as={Flex}
               width={{ base: "80%", md: "10rem" }}
@@ -72,6 +81,7 @@ export default function Header() {
       {isOpen ? (
         <Box margin="20px 0px" display={{ md: "none" }}>
           <Flex
+            zIndex="99999"
             flexDir={{ base: "column", md: "row" }}
             alignItems={"flex-start"}
             padding="10px 10px"
@@ -79,10 +89,21 @@ export default function Header() {
             bgColor="gray.900"
             width="100%"
             justifyContent="space-around">
-            <Link href={WhitePaper}>Download White Paper</Link>
+            <Link
+              as={Button}
+              width={{ base: "80%", md: "10rem" }}
+              cursor="pointer"
+              color="white"
+              columnGap=".5rem"
+              fontSize={{ base: ".8rem", md: "1rem" }}
+              border="1px solid white"
+              variant="outline"
+              href={WhitePaper}>
+              White Paper
+            </Link>
             <Button
               as={Flex}
-              width={{ base: "40%", md: "10rem" }}
+              width={{ base: "80%", md: "10rem" }}
               cursor="pointer"
               color="white"
               columnGap=".5rem"

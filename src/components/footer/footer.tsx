@@ -2,6 +2,7 @@ import { Box, Center, Flex, Heading, Image, Link } from "@chakra-ui/react";
 import Logo from "../../assets/logo2.svg";
 import Telegram from "../../assets/Telegram.svg";
 import Twitter from "../../assets/twitter.svg";
+import Mail from "../../assets/email.svg";
 
 const Footer = () => {
   return (
@@ -41,6 +42,9 @@ const Footer = () => {
               </Link>
               <Link href="https://twitter.com/twt2_token">
                 <Image height="2rem" width="2rem" src={Twitter} />
+              </Link>
+              <Link href="mailto: ceo@gmail.com">
+                <Image height="2rem" width="2rem" src={Mail} />
               </Link>
             </Flex>
           </Box>
