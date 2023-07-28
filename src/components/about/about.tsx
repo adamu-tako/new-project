@@ -76,8 +76,9 @@ const AboutSection = () => {
           border="4px solid #000">
           <Box
             marginInline="auto"
+            paddingInline="10px"
             textAlign="center"
-            width="320px"
+            width="max-content"
             borderRadius="12px"
             height="50px"
             outline="2px solid white"
