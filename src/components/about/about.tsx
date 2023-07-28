@@ -63,7 +63,21 @@ const AboutSection = () => {
         </Box>
 
         <Box
-          // fontSize="10px"
+          marginTop="3rem"
+          marginInline="auto"
+          paddingInline="10px"
+          textAlign="center"
+          width="max-content"
+          borderRadius="12px"
+          height="50px"
+          outline="2px solid white"
+          color="#fff"
+          boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
+          bgColor="transparent">
+          <Heading>Special Features</Heading>
+        </Box>
+        <Box
+          fontSize="10px"
           w="85%"
           marginInline="auto"
           minHeight="250px"
@@ -72,22 +86,9 @@ const AboutSection = () => {
           color={{ base: "black", md: "#fff" }}
           bgColor={{ base: "white", md: "transparent" }}
           borderRadius="12px"
-          marginBlock="3rem"
+          marginBottom="3rem"
+          marginTop="1.2rem"
           border="4px solid #000">
-          <Box
-            marginInline="auto"
-            paddingInline="10px"
-            textAlign="center"
-            width="max-content"
-            borderRadius="12px"
-            height="50px"
-            outline="2px solid white"
-            color={{ base: "black", md: "#fff" }}
-            boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
-            bgColor="transparent">
-            <Heading>Special Features</Heading>
-          </Box>
-
           <Box marginBlock=".5rem">
             <Heading fontSize="1.2rem">SMART SEARCH:</Heading>
             <Text fontSize=".9rem">

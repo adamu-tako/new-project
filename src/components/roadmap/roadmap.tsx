@@ -95,7 +95,7 @@ const Roadmap = () => {
           </Text>
         </Box>
 
-        <Box w={{ base: "100%", md: "60%" }} paddingTop="2rem">
+        <Box w={{ base: "100%", md: "100%" }} paddingTop="2rem">
           <Flex direction="column">
             {timelineData.map((row, index, arr) => {
               return (
