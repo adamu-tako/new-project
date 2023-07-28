@@ -41,25 +41,29 @@ export default function Header() {
             columnGap="20px"
             justifyContent="space-around">
             <Link
-              as={Button}
+              // padding="9px"
+              height="35px"
+              borderRadius="8px"
               width={{ base: "80%", md: "10rem" }}
               cursor="pointer"
               color="white"
+              display="grid"
+              placeItems="center"
               columnGap=".5rem"
               fontSize={{ base: ".8rem", md: "1rem" }}
-              border="1px solid white"
-              variant="outline"
+              border="2px solid white"
               href={WhitePaper}>
               White Paper
             </Link>
             <Button
               as={Flex}
+              height="35px"
               width={{ base: "80%", md: "10rem" }}
               cursor="pointer"
               color="white"
               columnGap=".5rem"
               fontSize={{ base: ".8rem", md: "1rem" }}
-              border="1px solid white"
+              border="2px solid white"
               variant="outline">
               <Flex flexDir="column">
                 <Icon as={ArrowForwardIcon} />
@@ -90,25 +94,28 @@ export default function Header() {
             width="100%"
             justifyContent="space-around">
             <Link
-              as={Button}
+              height="35px"
+              borderRadius="8px"
               width={{ base: "80%", md: "10rem" }}
               cursor="pointer"
               color="white"
+              display="grid"
+              placeItems="center"
               columnGap=".5rem"
               fontSize={{ base: ".8rem", md: "1rem" }}
-              border="1px solid white"
-              variant="outline"
+              border="2px solid white"
               href={WhitePaper}>
               White Paper
             </Link>
             <Button
               as={Flex}
               width={{ base: "80%", md: "10rem" }}
+              height="35px"
               cursor="pointer"
               color="white"
               columnGap=".5rem"
               fontSize={{ base: ".8rem", md: "1rem" }}
-              border="1px solid white"
+              border="2px solid white"
               variant="outline">
               <Flex flexDir="column">
                 <Icon as={ArrowForwardIcon} />

@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, DarkMode } from "@chakra-ui/react";
 import Header from "./components/header/header";
 import HeroSection from "./components/hero/hero";
 import Partners from "./components/partners/partners";
@@ -67,9 +67,11 @@ function App() {
   return (
     <>
       <Box bgColor="black" opacity={appOpacity} fontFamily="Open Sans">
-        <Box bgSize="100%" height="40vh">
-          <Header />
-        </Box>
+        <DarkMode>
+          <Box bgSize="100%" height="40vh">
+            <Header />
+          </Box>
+        </DarkMode>
         <Box
           // transform={{ base: "translateY(-100px)", md: "unset" }}
           bgRepeat="no-repeat">

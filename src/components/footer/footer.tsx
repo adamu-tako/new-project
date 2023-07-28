@@ -43,7 +43,7 @@ const Footer = () => {
               <Link href="https://twitter.com/twt2_token">
                 <Image height="2rem" width="2rem" src={Twitter} />
               </Link>
-              <Link href="mailto: ceo@gmail.com">
+              <Link href="mailto: ceo@twitter20.io">
                 <Image height="2rem" width="2rem" src={Mail} />
               </Link>
             </Flex>
