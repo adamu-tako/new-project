@@ -81,7 +81,7 @@ const AboutSection = () => {
             borderRadius="12px"
             height="50px"
             outline="2px solid white"
-            color="#fff"
+            color={{ base: "black", md: "#fff" }}
             boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
             bgColor="transparent">
             <Heading>Special Features</Heading>
