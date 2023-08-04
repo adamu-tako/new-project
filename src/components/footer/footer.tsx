@@ -34,10 +34,10 @@ const Footer = () => {
               minH="2rem"
               marginTop="3rem"
               columnGap="2rem">
-              <Link href="https://t.me/twitter2ann">
+              {/* <Link href="https://t.me/twitter2ann">
                 <Image height="2rem" width="2rem" src={Telegram} />
-              </Link>
-              <Link href="https://t.me/twitter2token">
+              </Link> */}
+              <Link href="https://t.me/X2Point0">
                 <Image height="2rem" width="2rem" src={Telegram} />
               </Link>
               <Link href="https://twitter.com/twt2_token">
