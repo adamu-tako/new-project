@@ -63,7 +63,6 @@ function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   return (
     <>
       <Box bgColor="black" opacity={appOpacity} fontFamily="Open Sans">
