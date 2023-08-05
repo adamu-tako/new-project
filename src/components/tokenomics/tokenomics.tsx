@@ -60,7 +60,7 @@ const Tokenomics = () => {
             minH="60px"
             borderRadius="12px"
             bgColor="#000">
-            <Heading fontSize="15px">0%/ 0%</Heading>
+            <Heading fontSize="15px">0%/ 5%</Heading>
             <Heading fontSize="12px">Buy/ Sell Tax</Heading>
           </Flex>
 
@@ -114,7 +114,7 @@ const Tokenomics = () => {
             border="2px solid black"
             borderRadius="12px"
             bgColor="#fff">
-            <Heading fontSize="15px"></Heading>
+            <Heading fontSize="15px">420,069,000</Heading>
             <Heading fontSize="12px">Total Supply</Heading>
           </Flex>
 
@@ -130,8 +130,8 @@ const Tokenomics = () => {
             border="2px solid black"
             borderRadius="12px"
             bgColor="#fff">
-            <Heading fontSize="15px">X 2.0</Heading>
-            <Heading fontSize="15px">X2.0</Heading>
+            <Heading fontSize="15px">Twitter 2.0</Heading>
+            <Heading fontSize="15px">TWTR</Heading>
           </Flex>
 
           <Flex>
